@@ -1,0 +1,23 @@
+// Main header
+
+header#header.header
+
+  // Search form at the top of the header
+  .header__top
+    img.npm-logo(src="./img/npm-logo.png", alt="npm logo")
+
+    form.search-form(action="/search" method="post")
+      input#search-box(type="text", name="search-box" placeholder="find packages")
+      .search-form__search
+        button(type="submit"): img(src="./img/search.png", alt="Search icon")
+
+    .header__account-options
+      | #[a(href="#") sign up] or #[a(href="#") login] #[img(src="./img/bear-logo.png")]
+
+
+  // Main title of the website
+  h1.main-title Build amazing things
+
+  p npm is the package maneger for Javascript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.
+
+  a.button(href="#") Sign up for npm
