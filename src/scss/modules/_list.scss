@@ -1,0 +1,14 @@
+// Lists
+
+.list {
+  padding-left: 3rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  &--bullet {
+    list-style-type: disc;
+    margin-bottom: 1.5rem;
+  }
+}

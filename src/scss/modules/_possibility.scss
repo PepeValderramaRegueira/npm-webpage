@@ -1,0 +1,16 @@
+// Possibilities. Contained in the last section.
+
+.possibility {
+  max-width: 30%;
+
+  a {
+    color: $red;
+  }
+
+  &__title {
+    color: #585858;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: map-get($main-font, 'semi-bold');
+  }
+}

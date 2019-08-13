@@ -1,0 +1,29 @@
+// Import all the files that the page will be using
+
+// Reset
+@import "reset/reset";
+
+// Base styles
+@import "base/base";
+
+// Fonts that the page will use
+@import "theme/fonts/poppins";
+
+// Theme for the website
+@import "theme/default";
+
+// Layout components
+@import "layout/nav";
+@import "layout/menu";
+@import "layout/section";
+@import "layout/header";
+@import "layout/footer";
+
+// Modules
+@import "modules/npm-logo";
+@import "modules/search-form";
+@import "modules/main-title";
+@import "modules/button";
+@import "modules/list";
+@import "modules/flex-container";
+@import "modules/possibility";

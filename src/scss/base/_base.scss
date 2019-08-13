@@ -1,0 +1,31 @@
+// Base styles for the tags
+
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="search"] {
+  border: none;
+  font-size: 1rem;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}

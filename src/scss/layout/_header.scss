@@ -1,0 +1,49 @@
+// Main header
+
+.header {
+  padding: 0.75rem 2rem;
+  background-image: url('./../img/city-scape.svg');
+  min-height: 600px;
+  background-size: cover;
+  color: $header-color;
+  position: relative;
+
+  * {
+    color: inherit;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);
+
+    // Paragraph right behind to the main title.
+    p {
+      max-width: 700px;
+      font-size: 1.25rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__account-options {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+
+    * {
+      color: inherit;
+    }
+
+    img {
+      width: 2.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+}

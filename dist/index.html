@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>NPM</title>
+    <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body>
     <!-- Navigation bar-->
@@ -23,16 +24,18 @@
       <!-- Search form at the top of the header-->
       <div class="header__top"><img class="npm-logo" src="./img/npm-logo.png" alt="npm logo"/>
         <form class="search-form" action="/search" method="post">
-          <input id="search-box" type="text" name="search-box" placeholder="find packages"/>
+          <input id="search-box" type="search" name="search-box" placeholder="find packages"/>
           <div class="search-form__search">
             <button type="submit"><img src="./img/search.png" alt="Search icon"/></button>
           </div>
         </form>
-        <div class="header__account-options"><a href="#">sign up</a> or <a href="#">login</a> <img src="./img/bear-logo.png"/></div>
+        <div class="header__account-options"><span><a href="#">sign up</a> <span>or</span> <a href="#">login</a></span> <img src="./img/bear-logo.png"/></div>
       </div>
       <!-- Main title of the website-->
-      <h1 class="main-title">Build amazing things</h1>
-      <p>npm is the package maneger for Javascript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.</p><a class="button button--orange" href="#">Sign up for npm</a>
+      <div class="header__content">
+        <h1 class="main-title">Build amazing things</h1>
+        <p>npm is the package maneger for Javascript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.</p><a class="button button--orange" href="#">Sign up for npm</a>
+      </div>
     </header>
     <!-- This is the first section of the website-->
     <section class="section section--dark">
@@ -58,7 +61,7 @@
     <section class="section section--light">
       <h2 class="section__title">What can you make with 700,000 building blocks?</h2>
       <p>The npm registry hosts almost half a million of free, reusable code - the largest software registry in the world.</p>
-      <div class="flex-container space-between">
+      <div class="flex-container space-around">
         <div class="possibility"><img class="possibility__img" src="./img/binoculars.svg" alt="Binoculars image"/>
           <h3 class="possibility__title">Find</h3>
           <p class="possibility__text">Libraries like <a href="#">jQuery</a>, <a href="#">Bootstrap</a>, <a href="#">React</a>, and <a href="#">Angular</a> components from frameworks such as <a href="#">Ember</a>.</p>

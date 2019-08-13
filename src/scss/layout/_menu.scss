@@ -1,0 +1,17 @@
+// Main menu. Is contained into the nav, and it's
+// positionated to the right of the nav.
+
+.menu {
+  display: flex;
+
+  // Links of the menu (<a>)
+  &__link {
+    padding: 1rem;
+    display: inline-block;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}

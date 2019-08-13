@@ -1,0 +1,9 @@
+// Flex container to quickly struct sections
+
+.flex-container {
+  display: flex;
+
+  &.space-around {
+    justify-content: space-around;
+  }
+}

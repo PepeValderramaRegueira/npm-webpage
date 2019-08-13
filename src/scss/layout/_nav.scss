@@ -1,0 +1,23 @@
+// Styles for the navigation bar
+
+.nav {
+  background-color: $navbar-background;
+  color: $on-navbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  &__left {
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+
+  // All the tags inside the nav will hace the color set
+  // to $on-navbar
+  * {
+    color: inherit;
+  }
+}

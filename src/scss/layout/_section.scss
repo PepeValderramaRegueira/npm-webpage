@@ -1,0 +1,74 @@
+// Sections along the website
+
+.section {
+  padding: 6rem 4rem;
+
+  &:last-child {
+    padding-bottom: 2rem;
+  }
+
+  &__img {
+    width: 50%;
+    text-align: right;
+    margin-right: 2rem;
+
+    img {
+      max-width: 600px;
+    }
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &--dark,
+  &--blue {
+    color: $on-dark-blue;
+    display: flex;
+
+    * {
+      color: inherit;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &--dark {
+    background-color: $dark-blue;
+
+    * {
+      color: inherit;
+    }
+  }
+
+  &--blue {
+    background-image: url('./../img/forklift.svg');
+    background-size: cover;
+  }
+
+  &--light {
+    text-align: center;
+
+    .section__title {
+      color: $dark-blue;
+      font-weight: map-get($main-font, 'semi-bold');
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: #888888;
+      margin-bottom: 3rem;
+    }
+  }
+}

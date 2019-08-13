@@ -1,0 +1,22 @@
+// Default theme for the website
+
+// Main font
+$main-font: $poppins;
+
+// Apply the main font
+* {
+  font-family: map-get($main-font, 'family');
+}
+
+// Navbar
+$navbar-background  : #C12127;
+$on-navbar          : #FFFFFF;
+
+// Header
+$header-color: #FFFFFF;
+
+// General color palette
+$dark-blue    : #263546;
+$on-dark-blue : #FFFFFF;
+$red          : #CB3737;
+$on-red       : #FFFFFF;

@@ -7,17 +7,18 @@ header#header.header
     img.npm-logo(src="./img/npm-logo.png", alt="npm logo")
 
     form.search-form(action="/search" method="post")
-      input#search-box(type="text", name="search-box" placeholder="find packages")
+      input#search-box(type="search", name="search-box" placeholder="find packages")
       .search-form__search
         button(type="submit"): img(src="./img/search.png", alt="Search icon")
 
     .header__account-options
-      | #[a(href="#") sign up] or #[a(href="#") login] #[img(src="./img/bear-logo.png")]
+      | #[span #[a(href="#") sign up] #[span or] #[a(href="#") login]] #[img(src="./img/bear-logo.png")]
 
 
   // Main title of the website
-  h1.main-title Build amazing things
+  .header__content
+    h1.main-title Build amazing things
 
-  p npm is the package maneger for Javascript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.
+    p npm is the package maneger for Javascript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.
 
-  a.button.button--orange(href="#") Sign up for npm
+    a.button.button--orange(href="#") Sign up for npm
